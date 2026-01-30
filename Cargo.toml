@@ -1,0 +1,19 @@
+[package]
+name = "chauhan_archtype"
+version = "0.1.0"
+edition = "2026"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+eframe = "0.29" 
+serde = { version = "1.0", features = ["derive"] } 
+
+[target.'cfg(target_os = "android")'.dependencies]
+android_activity = { version = "0.5", features = ["game-activity"] }
+
+[profile.release]
+opt-level = "z" 
+lto = true
+strip = true
