@@ -1,6 +1,6 @@
 [package]
-name = "chauhan_archtype"
-version = "0.1.0"
+name = "chauhan_archtype_system"
+version = "0.0.0"
 edition = "2026"
 
 [lib]
